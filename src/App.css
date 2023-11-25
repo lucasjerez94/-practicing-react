@@ -52,6 +52,40 @@ body {
 }
 /*------------------------------- */
 
+/*SIDEBAR*/
+
+.container-sidebar   {
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.nav-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-sidebar li {
+  padding: 15px;
+}
+
+.nav-sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.nav-sidebar a:hover {
+  background-color: #555;
+}
+
+
+/*------------------------------- */
+
 /*SEARCHBAR*/
 .container-searchbar{
   text-align: center;
