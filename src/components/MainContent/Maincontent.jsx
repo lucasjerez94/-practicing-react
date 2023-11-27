@@ -1,5 +1,5 @@
-import {Sidebar} from '../Sidebar/Sidebar';
-import {SearchBar} from '../searchbar/Searchbar';
+import {Sidebar} from './Sidebar';
+import {SearchBar} from './Searchbar';
 
 export const Maincontent = () => {
     return(
