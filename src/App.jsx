@@ -1,15 +1,17 @@
 import {Header} from './components/Header/Header';
 import {SearchBar} from './components/searchbar/Searchbar';
-import { Sidebar } from './components/Sidebar/Sidebar';
+import {Sidebar} from './components/Sidebar/Sidebar';
 import {Footer} from './components/Footer/Footer';
 import '../src/App.css';
 
 function App() {
   return (
-    <div className='app' >
+    <div id='root' >
       <Header />
-      <Sidebar />
-      <SearchBar />
+      <div className='ContentWrapper'>
+        <Sidebar />
+        <SearchBar />
+      </div>
       <Footer />
     </div>
   );

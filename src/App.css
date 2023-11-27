@@ -3,33 +3,17 @@
 }
 
 body {
-    margin: 0;
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
-  }
-  
-  .app {
-    flex-direction: column;
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-  }
-  
-  main {
-    flex: 1;
-    padding: 0;
-    margin: 0;
-  }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
 
-
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+  
 /*------------------------------- */
 /*From this point on, all styles for each component*/
 /*------------------------------- */
@@ -38,6 +22,7 @@ body {
 .container-header{
   background-color: black;
   color: white;
+  padding: 10px;
   text-align: center;
 }
 
@@ -52,15 +37,47 @@ body {
 }
 /*------------------------------- */
 
-/*SIDEBAR*/
+/*CONTENTWRAPPER*/
+.ContentWrapper{
+  display: flex;
+  flex: 1;
+}
+/*------------------------------- */
 
-.container-sidebar   {
-  width: 200px;
-  height: 100%;
-  background-color: #333;
+/*SEARCHBAR*/
+.container-searchbar{
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-searchbar {
+  width: 300px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.btn-searchbar {
+  padding: 10px;
+  background-color: #4caf50;
   color: white;
-  padding-top: 20px;
-  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+input::placeholder{
+  color: blue;
+}
+/*------------------------------- */
+
+/*SIDEBAR*/
+.container-sidebar{
+  width: 200px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 20px;
 }
 
 .nav-sidebar ul {
@@ -82,26 +99,16 @@ body {
 .nav-sidebar a:hover {
   background-color: #555;
 }
-
-
-/*------------------------------- */
-
-/*SEARCHBAR*/
-.container-searchbar{
-  text-align: center;
-  padding: 5em;
-}
-
-input::placeholder{
-  color: blue;
-}
 /*------------------------------- */
   
 /*FOOTER*/
 .container-footer{
   background-color: black;
   color: white;
+  margin-top: auto;
+}
+
+.p-footer{
   text-align: center;
-  padding: 10px;
 }
 /*------------------------------- */
