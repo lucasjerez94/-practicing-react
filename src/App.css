@@ -37,38 +37,10 @@ body {
 }
 /*------------------------------- */
 
-/*CONTENTWRAPPER*/
-.ContentWrapper{
+/*MAINCONTENT*/
+.container-maincontent{
   display: flex;
   flex: 1;
-}
-/*------------------------------- */
-
-/*SEARCHBAR*/
-.container-searchbar{
-  width: 100%;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.input-searchbar {
-  width: 300px;
-  padding: 10px;
-  margin-right: 10px;
-}
-
-.btn-searchbar {
-  padding: 10px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-input::placeholder{
-  color: blue;
 }
 /*------------------------------- */
 
@@ -98,6 +70,35 @@ input::placeholder{
 
 .nav-sidebar a:hover {
   background-color: #555;
+}
+/*------------------------------- */
+
+/*SEARCHBAR*/
+.container-searchbar{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.input-searchbar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-searchbar {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input::placeholder{
+  color: blue;
 }
 /*------------------------------- */
   
